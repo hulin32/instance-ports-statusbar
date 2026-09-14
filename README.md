@@ -21,7 +21,7 @@ Working across several projects at once, you end up with a pile of dev servers o
 
 ## Install
 
-**From a release:** download the `.vsix` from [Releases](https://github.com/linhuon/instance-ports-statusbar/releases) and install it.
+**From a release:** download the `.vsix` from [Releases](https://github.com/hulin32/instance-ports-statusbar/releases) and install it.
 
 ```sh
 code --install-extension instance-ports-statusbar-0.1.0.vsix
@@ -32,7 +32,7 @@ Or open the Extensions view, click the `...` menu, and choose **Install from VSI
 **From source:**
 
 ```sh
-git clone https://github.com/linhuon/instance-ports-statusbar.git
+git clone https://github.com/hulin32/instance-ports-statusbar.git
 cd instance-ports-statusbar
 npx @vscode/vsce package
 code --install-extension instance-ports-statusbar-0.1.0.vsix
