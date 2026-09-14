@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128" role="img" aria-label="Current Window Ports">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E3543"/>
+      <stop offset="0.55" stop-color="#1B1F28"/>
+      <stop offset="1" stop-color="#101318"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="portGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#tile)"/>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#sheen)"/>
+  <rect x="5" y="5" width="118" height="118" rx="27" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>
+
+  <!-- terminal prompt -->
+  <path d="M36 46 L54 64 L36 82" fill="none" stroke="#E9EDF5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- port slots -->
+  <rect x="68" y="41" width="28" height="10" rx="5" fill="#4C5567"/>
+  <rect x="68" y="77" width="28" height="10" rx="5" fill="#4C5567"/>
+
+  <!-- active port -->
+  <rect x="68" y="59" width="28" height="10" rx="5" fill="#2FD273" filter="url(#portGlow)" opacity="0.75"/>
+  <rect x="68" y="59" width="28" height="10" rx="5" fill="#3BE383"/>
+</svg>

@@ -1,0 +1,74 @@
+{
+  "name": "instance-ports-statusbar",
+  "displayName": "Current Window Ports",
+  "description": "Displays listening ports started exclusively by terminals in the current VS Code window in the status bar",
+  "version": "0.1.0",
+  "publisher": "local",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1B1F28",
+    "theme": "dark"
+  },
+  "keywords": [
+    "ports",
+    "localhost",
+    "dev server",
+    "status bar",
+    "terminal",
+    "listen"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linhuon/instance-ports-statusbar"
+  },
+  "bugs": {
+    "url": "https://github.com/linhuon/instance-ports-statusbar/issues"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "instance-ports.showMenu",
+        "title": "Current Window Ports: Show Open Ports"
+      },
+      {
+        "command": "instance-ports.refresh",
+        "title": "Current Window Ports: Refresh"
+      }
+    ],
+    "configuration": {
+      "title": "Current Window Ports",
+      "properties": {
+        "instancePorts.protocol": {
+          "type": "string",
+          "enum": [
+            "https",
+            "http"
+          ],
+          "default": "https",
+          "description": "Default protocol for opening ports in the browser"
+        },
+        "instancePorts.hideWhenEmpty": {
+          "type": "boolean",
+          "default": false,
+          "description": "Hide the status bar item when no ports are open in this window"
+        },
+        "instancePorts.pollInterval": {
+          "type": "number",
+          "default": 3,
+          "description": "Interval in seconds to check for open ports"
+        }
+      }
+    }
+  }
+}
