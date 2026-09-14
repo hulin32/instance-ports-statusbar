@@ -3,7 +3,7 @@
   "displayName": "Current Window Ports",
   "description": "Displays listening ports started exclusively by terminals in the current VS Code window in the status bar",
   "version": "0.1.0",
-  "publisher": "local",
+  "publisher": "hulin32",
   "license": "MIT",
   "icon": "icon.png",
   "galleryBanner": {
